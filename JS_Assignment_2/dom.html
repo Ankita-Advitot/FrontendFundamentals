@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    // Change text on button click
+    <div id="message">Hello World</div>
+<button id="changeBtn">Change Text</button>
+
+<script>
+  const message = document.getElementById("message");
+  const changeBtn = document.getElementById("changeBtn");
+
+  changeBtn.addEventListener("click", function () {
+    message.textContent = "Text Changed!";
+  });
+</script>
+
+
+// 2 Add a new list item dynamically
+<ul id="list">
+    <li>Item 1</li>
+  </ul>
+  <button id="addItem">Add Item</button>
+  
+  <script>
+    const list = document.getElementById("list");
+    const addItem = document.getElementById("addItem");
+  
+    let count = 2;
+  
+    addItem.addEventListener("click", function () {
+      const li = document.createElement("li");
+      li.textContent = "Item " + count;
+      list.appendChild(li);
+      count++;
+    });
+  </script>
+   
+</body>
+</html>

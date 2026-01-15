@@ -48,3 +48,6 @@ const titleCase = text
   .join(" ");
 
 console.log(titleCase);
+
+
+
