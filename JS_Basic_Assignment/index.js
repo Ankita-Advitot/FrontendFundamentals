@@ -7,9 +7,7 @@ function printName() {
     }
     console.log(name);
   }
-  printName();
-
- 
+  printName(); 
    //2 
 
 let age = "18";
